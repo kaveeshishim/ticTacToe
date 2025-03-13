@@ -1,5 +1,5 @@
 var turn=0
-
+// this function makes the text such as x or o appear on the button and then passes the turn
  function clicked(value){
     var objId = "button"+value+"text";
     if(objId!="X" || objId!="O")
@@ -15,7 +15,7 @@ var turn=0
         }
     winCondition();
 }
-
+// this function clears all the values in the buttons and resets the board
 function allClear(){
     var allClearValue=1;
     var buttonUsable=0;
@@ -27,7 +27,7 @@ function allClear(){
     }
     document.getElementById('winText').innerText=''
 }
-
+//it checks for all possible win conditions
 function winCondition(){
     var noEditAfterWin=0;
     /* 123 combo */
